@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edgeon.ecomapapp.activities.Issue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/header"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="STATISTICS"
+                android:textColor="#324347"
+                android:padding="10dp"
+                android:id="@+id/statisticsTxt"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="TYPE WISE"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:clickable="true"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/stats_filter_bg_filled"
+                android:id="@+id/typeWise"
+                android:layout_marginRight="7dp"
+                android:layout_marginEnd="7dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="AREA WISE"
+                android:clickable="true"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:textColor="#37414B"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/stats_filter_bg"
+                android:id="@+id/areaWise"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:id="@+id/fragment"
+           android:layout_height="match_parent">
+
+       </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

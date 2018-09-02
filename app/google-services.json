@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "887151628840",
+    "firebase_url": "https://eco-map-a0eb8.firebaseio.com",
+    "project_id": "eco-map-a0eb8",
+    "storage_bucket": "eco-map-a0eb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887151628840:android:070dae42cef101f7",
+        "android_client_info": {
+          "package_name": "com.edgeon.ecomapapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887151628840-bpp5n8ih9qp88bh0gcl3tumc65r8av4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edgeon.ecomapapp",
+            "certificate_hash": "35bd204e6922247c930e8cf6bf22f536099e5dd9"
+          }
+        },
+        {
+          "client_id": "887151628840-gqnbv26l946kehdi42mo522rd5ub6d9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edgeon.ecomapapp",
+            "certificate_hash": "4ada530f37309f2bf0d81eebf99fed7773214b92"
+          }
+        },
+        {
+          "client_id": "887151628840-mevjsjq6ds9kdrfsl4ra6iu3da33kml0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkAqmPp6-SMNp_U1EkliGSORZ3oZoiWMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887151628840-mevjsjq6ds9kdrfsl4ra6iu3da33kml0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

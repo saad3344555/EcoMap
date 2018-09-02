@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9bd28a</color>
+    <color name="colorPrimaryTransparency">#969bd28a</color>
+    <color name="colorPrimaryDark">#558846</color>
+    <color name="colorAccent">#34404C</color>
+    <color name="transparent">#00000000</color>
+    <color name="solidwaste">#FFFF7271</color>
+    <color name="sewage">#FFFEAE72</color>
+    <color name="enchroachments">#FF69C9BE</color>
+    <color name="other">#FF9BD28A</color>
+    <color name="tree">#bf8ad2</color>
+
+</resources>

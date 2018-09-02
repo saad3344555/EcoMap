@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:id="@+id/relativeLayout2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/goToSearch"
+                android:background="@drawable/search_background">
+
+                <TextView
+                    android:id="@+id/search"
+                    android:cursorVisible="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:hint="Search Location..."
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/search_image"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:id="@+id/search_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/search" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:translationZ="2dp"
+                android:layout_centerInParent="true">
+
+                <include layout="@layout/custom_marker"/>
+
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.edgeon.ecomapapp.activities.Map" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_above="@+id/reportBtn"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:id="@+id/pin"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/pin"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="@drawable/report_button_bg"
+                android:id="@+id/reportBtn"
+                android:gravity="center_vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/report"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/reportTxt"
+                    android:text="REPORT"
+                    android:gravity="center"
+                    android:textColor="#324347"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:visibility="gone"
+        android:id="@+id/reportLayout"
+        android:background="@color/colorPrimaryTransparency"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/issue_layout"
+            android:paddingBottom="7dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/white_rect_bg"
+            android:paddingTop="7dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/image_issue"
+                android:src="@drawable/issue_map"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="ISSUE"
+                android:id="@+id/issueTxt"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/solution_layout"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/issue_layout"
+            android:paddingBottom="7dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/white_rect_bg"
+            android:paddingTop="7dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/solution_map"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOLUTION"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:id="@+id/solutionTxt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
